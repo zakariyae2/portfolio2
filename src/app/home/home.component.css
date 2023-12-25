@@ -1,0 +1,14 @@
+.home-background {
+    background-image: url('../../assets/backhome.jpg'); /* Adjust the path based on your project structure */
+    background-size: cover;
+    background-position: center;
+    height: 90vh; /* Set the height to the viewport height or adjust as needed */
+    padding-top: 200px;
+    padding-left: 120px;
+  }
+  .btn-primary {
+    color: #fff;
+    background-color: #6244C5;
+    border-color: #6244C5;
+}
+ 

@@ -1,0 +1,141 @@
+<h1 class="cen d-flex justify-content-center" 
+style="font-weight: 700; font-size: 55px; margin-top: 150px;">Skills & Experience</h1>
+<div class="cen d-flex justify-content-center align-items-center">
+<div class="cont">
+<section class="bg-light py-5 py-xl-6" class="ski">
+    <div class="container mb-5 mb-md-6">
+      <div class="row justify-content-md-center">
+        <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6 text-center">
+          <h2 class="mb-4 display-5">Skills</h2>
+          <hr class="w-50 mx-auto mb-0 text-secondary">
+        </div>
+      </div>
+    </div>
+  
+    <div class="container overflow-hidden">
+      <div class="row justify-content-xl-center gy-3 gy-sm-4">
+        <div class="col-12 col-sm-6 col-xl-5">
+          <div class="bg-white rounded shadow-sm p-3 p-md-4 p-xxl-5">
+            <h3 class="fw-bold mb-2">Angular</h3>
+            <div class="progress">
+              <div class="progress-bar w-70 progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Bootstrap" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">70%</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-xl-5">
+          <div class="bg-white rounded shadow-sm p-3 p-md-4 p-xxl-5">
+            <h3 class="fw-bold mb-2">ASP.net </h3>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%;" role="progressbar" aria-label="React" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">60%</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-xl-5">
+          <div class="bg-white rounded shadow-sm p-3 p-md-4 p-xxl-5">
+            <h3 class="fw-bold mb-2">Ionic</h3>
+            <div class="progress">
+              <div class="progress-bar w-70 progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Vue" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">70%</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-xl-5">
+          <div class="bg-white rounded shadow-sm p-3 p-md-4 p-xxl-5">
+            <h3 class="fw-bold mb-2">ADO.net</h3>
+            <div class="progress">
+              <div class="progress-bar w-75 progress-bar-striped progress-bar-animated" role="progressbar" aria-label="WordPress" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">75%</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-xl-5">
+          <div class="bg-white rounded shadow-sm p-3 p-md-4 p-xxl-5">
+            <h3 class="fw-bold mb-2">C#</h3>
+            <div class="progress">
+              <div class="progress-bar w-75 progress-bar-striped progress-bar-animated" role="progressbar" aria-label="WordPress" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">75%</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-xl-5">
+          <div class="bg-white rounded shadow-sm p-3 p-md-4 p-xxl-5">
+            <h3 class="fw-bold mb-2">Java</h3>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 65%;" role="progressbar" aria-label="WordPress" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">65%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mt-4">
+        <button type="button" class="btn btn-primary4" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          <h5 class="m-0">Show more</h5>
+        </button>
+      </div>
+    </div>
+    
+  </section>
+  <section class="bg-light py-5 py-xl-6" class="ski2">
+    <div class="cent">
+        <div class="exp">
+          <div style="width: 50%;">
+            <a class="btn btn-primary3 py-3 px-4 me-2" [ngClass]="{'btn-primary2': activeButtonIndex === 1, 'btn-primary3': activeButtonIndex !== 1}" (click)="setActiveButton(0)">
+              <h5 h5 [style.color]="activeButtonIndex === 1 ? 'black' : 'white'">Experience</h5></a>
+          </div>
+            <div style="width: 50%;">
+              <a class="btn btn-primary2 py-3 px-4" [ngClass]="{'btn-primary3': activeButtonIndex === 1, 'btn-primary2': activeButtonIndex !== 1}" (click)="setActiveButton(1)">
+                <h5 [style.color]="activeButtonIndex === 1 ? 'white' : 'black'">Education</h5></a>
+            </div>
+        </div>
+    </div>
+    <div style="margin-left: 100p;">
+      <div *ngIf="experienceTextVisible">
+        <app-experience></app-experience>
+      </div>
+    </div>
+    <div style="margin-left: 100p;">
+      <div *ngIf="educationTextVisible">
+        <app-education></app-education>
+      </div>
+    </div>
+  </section>
+</div>
+</div>
+<div >
+  <div class="cont2">
+    <div class="collapse" id="collapseExample">
+      <div style="display: flex;margin-top: 50px;">
+        <div class="col-12 col-sm-6 col-xl-3" style="margin-left: 120px;">
+          <div class="bg-white rounded shadow-sm p-3 p-md-4 p-xxl-5">
+            <h3 class="fw-bold mb-2">typescript </h3>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 65%;" role="progressbar" aria-label="React" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">65%</div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-12 col-sm-6 col-xl-3" style="margin-left: 100px;">
+          <div class="bg-white rounded shadow-sm p-3 p-md-4 p-xxl-5">
+            <h3 class="fw-bold mb-2">React </h3>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%;" role="progressbar" aria-label="React" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">60%</div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-12 col-sm-6 col-xl-3" style="margin-left: 100px;">
+          <div class="bg-white rounded shadow-sm p-3 p-md-4 p-xxl-5">
+            <h3 class="fw-bold mb-2">MySql</h3>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 65%;" role="progressbar" aria-label="Vue" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-xl-3" style="margin-left: 120px;margin-top: 50px;">
+        <div class="bg-white rounded shadow-sm p-3 p-md-4 p-xxl-5">
+          <h3 class="fw-bold mb-2">Firebase</h3>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%;" role="progressbar" aria-label="Vue" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">60%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>

@@ -1,0 +1,44 @@
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff; /* Adjust the background color as needed */
+  z-index: 1000;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col {
+  position: relative;
+  z-index: 1;
+}
+
+.portfolio-title {
+  color: #6244C5 !important;
+  font-weight: 700 !important;
+  border-radius: 5px;
+  position: relative;
+  z-index: 2;
+  
+}
+.color{
+  background-color: #FFC448;
+  width: 200px;
+  height: 74px;
+  position: absolute;
+  margin-right: 80px;
+}
+.nav-item {
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-item.active {
+  color: #6244C5 !important;
+}

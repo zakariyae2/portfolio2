@@ -1,0 +1,42 @@
+<div class="fixed-navbar">
+  <nav class="nav">
+    <div class="color"></div>
+    <li><button class="nav-item nav-link" [ngClass]="{'active': activeSection === 'home'}" (click)="scrollToAbout('home')"><h5>Home</h5></button></li>
+    <li><button class="nav-item nav-link" [ngClass]="{'active': activeSection === 'about'}" (click)="scrollToAbout('about')"><h5>About</h5></button></li>
+    <li><button class="nav-item nav-link" [ngClass]="{'active': activeSection === 'skills'}" (click)="scrollToAbout('skills')"><h5>Skills</h5></button></li>
+    <li>
+      <a routerLink="/second-component" class="nav-item nav-link" routerLinkActive="active" ariaCurrentWhenActive="page">
+        <div class="col">
+          <h1 class="portfolio-title">Portfolio</h1>
+        </div>
+      </a>
+    </li>
+    <li><button class="nav-item nav-link" [ngClass]="{'active': activeSection === 'projects'}" (click)="scrollToAbout('projects')"><h5>Projects</h5></button></li>
+    <li><button class="nav-item nav-link" [ngClass]="{'active': activeSection === 'certificate'}" (click)="scrollToAbout('certificate')"><h5>Certificate</h5></button></li>
+    <li><button class="nav-item nav-link" [ngClass]="{'active': activeSection === 'contact'}" (click)="scrollToAbout('contact')"><h5>Contact</h5></button></li>
+  </nav>
+</div>
+<div class="content">
+    <section id="home" style="margin-top: 60px;">
+      <app-home></app-home>
+    </section>
+    <section id="about">
+      <app-about></app-about>
+    </section>
+    <section id="skills">
+      <app-skills></app-skills>
+    </section>
+    <section id="projects">
+      <app-projects></app-projects>
+      <section id="gestion">
+      <router-outlet></router-outlet>
+    </section>
+    </section>
+    <section id="certificate">
+      <app-certificate></app-certificate>
+    </section>
+    <section id="contact">
+      <app-contact></app-contact>
+    </section>
+    
+  </div>
